@@ -19,7 +19,8 @@
 </head>
 <body>
   <div class="container-scroller d-flex">
-    <!-- partial:./partials/_sidebar.html -->
+
+    <!-- includes/_sidebar.html -->
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
       <ul class="nav">
         <li class="nav-item sidebar-category">
@@ -27,51 +28,65 @@
           <span></span>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="index.php">
             <i class="mdi mdi-view-quilt menu-icon"></i>
             <span class="menu-title">Dashboard</span>
+
+            <!-- Notification
             <div class="badge badge-info badge-pill">2</div>
+-->
           </a>
         </li>
         <li class="nav-item sidebar-category">
           <p>Components</p>
           <span></span>
         </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="A3poster.php" >
+            <i class="mdi mdi-palette menu-icon"></i>
+            <span class="menu-title">A3 Poster</span>
+          </a>
+        </li>
+
+        <!-- POP SIDEBAR
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
             <i class="mdi mdi-palette menu-icon"></i>
             <span class="menu-title">A3 Poster</span>
             <i class="menu-arrow"></i>
           </a>
-          <div class="collapse" id="ui-basic">
+
+           <div class="collapse" id="ui-basic">
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="pages/samples/A3poster.html">Buttons</a></li>
-              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+              <li class="nav-item"> <a class="nav-link" href="A3poster.php">Buttons</a></li>
             </ul>
-          </div>
+          </div> 
         </li>
+        -->
+
         <li class="nav-item">
-          <a class="nav-link" href="pages/forms/basic_elements.html">
+          <a class="nav-link" href="crowner.php">
             <i class="mdi mdi-view-headline menu-icon"></i>
             <span class="menu-title">Crowner</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/charts/chartjs.html">
+          <a class="nav-link" href="board.php">
             <i class="mdi mdi-chart-pie menu-icon"></i>
             <span class="menu-title">Impression Board</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/tables/basic-table.html">
+          <a class="nav-link" href="fin.php">
             <i class="mdi mdi-grid-large menu-icon"></i>
             <span class="menu-title">Magnetic Fin</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/icons/mdi.html">
+          <a class="nav-link" href="cardstand.php">
             <i class="mdi mdi-emoticon menu-icon"></i>
-            <span class="menu-title">Monitor Stand</span>
+            <span class="menu-title">Monitor Card Stand</span>
           </a>
         </li>
         <li class="nav-item sidebar-category">
@@ -86,34 +101,39 @@
           </a>
           <div class="collapse" id="auth">
             <ul class="nav flex-column sub-menu">
+              <li class="nav-item"><a class="nav-link" href="forgotpassword.php">Forget Password</a></li>
+              <!-- login
               <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
               <li class="nav-item"> <a class="nav-link" href="pages/samples/login-2.html"> Login 2 </a></li>
               <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
               <li class="nav-item"> <a class="nav-link" href="pages/samples/register-2.html"> Register 2 </a></li>
               <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> Lockscreen </a></li>
+-->
             </ul>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="docs/documentation.html">
+          <a class="nav-link" href="pages/samples/logout.php">
             <i class="mdi mdi-file-document-box-outline menu-icon"></i>
             <span class="menu-title">Log out</span>
           </a>
         </li>
         <li class="nav-item sidebar-category">
-          <p>Apps</p>
+          <p>Form Application</p>
           <span></span>
         </li>
        
         <li class="nav-item">
-          <a class="nav-link" href="http://www.bootstrapdash.com/demo/spica/template/">
+          <a class="nav-link" href="https://forms.gle/wvjpvY8sbjGpV2m19">
             <button class="btn bg-danger btn-sm menu-title">Google Form</button>
           </a>
         </li>
       </ul>
     </nav>
     <!-- partial -->
+
     <div class="container-fluid page-body-wrapper">
+
       <!-- partial:./partials/_navbar.html -->
       <nav class="navbar col-lg-12 col-12 px-0 py-0 py-lg-4 d-flex flex-row">
         <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
@@ -121,13 +141,13 @@
             <span class="mdi mdi-menu"></span>
           </button>
           <div class="navbar-brand-wrapper">
-            <a class="navbar-brand brand-logo" href="index.html"><img src="-" alt="logo"/></a>
-            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="-" alt="logo"/></a>
+            <a class="navbar-brand brand-logo" href="index.php"><img src="-" alt="logo"/></a>
+            <a class="navbar-brand brand-logo-mini" href="index.php"><img src="-" alt="logo"/></a>
           </div>
           <h4 class="font-weight-bold mb-0 d-none d-md-block mt-1">Welcome back, username</h4>
           <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item">
-              <h4 class="mb-0 font-weight-bold d-none d-xl-block">id="currentDate"</h4>
+              <h4 class="mb-0 font-weight-bold d-none d-xl-block" id="currentDate"></h4>
             </li>
 
             <script>document.getElementById("currentDate").innerHTML=new Date().toLocaleDateString();</script>
@@ -135,6 +155,9 @@
             <li class="nav-item dropdown mr-1">
               <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
                 <i class="mdi mdi-calendar mx-0"></i>
+                
+                <!--count notfication
+
                 <span class="count bg-info">2</span>
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
@@ -177,13 +200,19 @@
                 </a>
               </div>
             </li>
+-->
             <li class="nav-item dropdown mr-2">
               <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="#" data-toggle="dropdown">
                 <i class="mdi mdi-email-open mx-0"></i>
+
+              <!-- notification count
                 <span class="count bg-danger">1</span>
+-->
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
                 <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+
+                <!-- new user registration
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
                     <div class="preview-icon bg-success">
@@ -197,6 +226,7 @@
                     </p>
                   </div>
                 </a>
+                
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
                     <div class="preview-icon bg-warning">
@@ -210,22 +240,26 @@
                     </p>
                   </div>
                 </a>
+                
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
                     <div class="preview-icon bg-info">
                       <i class="mdi mdi-account-box mx-0"></i>
                     </div>
                   </div>
+                  
                   <div class="preview-item-content">
                     <h6 class="preview-subject font-weight-normal">New user registration</h6>
                     <p class="font-weight-light small-text mb-0 text-muted">
                       2 days ago
                     </p>
                   </div>
+-->
                 </a>
               </div>
             </li>
           </ul>
+
           <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
             <span class="mdi mdi-menu"></span>
           </button>
@@ -255,16 +289,20 @@
                 </a>
               </div>
             </li>
+            <!--icon
             <li class="nav-item">
               <a href="#" class="nav-link icon-link">
                 <i class="mdi mdi-plus-circle-outline"></i>
               </a>
             </li>
+-->
+            <!--icon
             <li class="nav-item">
               <a href="#" class="nav-link icon-link">
                 <i class="mdi mdi-web"></i>
               </a>
             </li>
+-->
             <li class="nav-item">
               <a href="#" class="nav-link icon-link">
                 <i class="mdi mdi-clock-outline"></i>
@@ -326,11 +364,11 @@
                     <div class="card-body">
                       <div class="d-flex justify-content-between align-items-center mb-3">
                         <button id="prevBtn" class="btn btn-light">
-                          <i class="fa-solid fa-chevron-left"></i>
+                          <i class="mdi mdi-chevron-left"></i>
                         </button>
                         <div class="monthYear" id="monthYear"></div>
                         <button id="nextBtn" class="btn btn-light">
-                          <i class="fa-solid fa-chevron-right"></i>
+                          <i class="mdi mdi-chevron-right"></i>
                         </button>
                       </div>
                       
@@ -355,15 +393,17 @@
                     <style>
                       .days, .dates {
                         display: grid;
-                        grid-template-columns: repeat(7, 1fr); /*To ensure 7 columns*/
+                        grid-template-columns:  repeat(7, 1fr); /*To ensure 7 columns*/
                         gap: 5px;
                       }
 
                       .days .day, .dates .date {
                         text-align: center;
+                        box-sizing: border-box;
                         padding: 10px;
                         border-radius: 5px;
                         background-color: #f8f9fa;
+                       
                       }
 
                       .dates .date {
@@ -417,6 +457,7 @@
 
                       // Handle Previous and Next Buttons
                       prevBtn.addEventListener('click', () => {
+                        
                         currentDate.setMonth(currentDate.getMonth() - 1);
                         renderCalendar();
                       });
@@ -451,19 +492,9 @@
         </div>
           
       
-        <!-- content-wrapper ends -->
-        <!-- partial:./partials/_footer.html -->
-        <footer class="footer">
-          <div class="container"> <!-- Add this div for proper alignment -->
-            <div class="card">
-              <div class="card-body">
-                <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                  <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2024 Your Company Name</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
+            <!-- content-wrapper ends -->
+            <!-- partial:./partials/_footer.html -->
+          <?php include 'includes/_footer.html'; ?>
         
         <!-- partial -->
       </div>
